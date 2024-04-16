@@ -1,3 +1,5 @@
+package UebungEins;
+
 import java.text.*;
 
 public class GermanFormatNumberTransformer implements NumberTransformer{
@@ -12,7 +14,7 @@ public class GermanFormatNumberTransformer implements NumberTransformer{
 
 
         if (number < 1 || number  > 3000) {
-            return "error";
+            return "ERROR";
         }
         DecimalFormatSymbols sym = new DecimalFormatSymbols();
         sym.setGroupingSeparator('.');
